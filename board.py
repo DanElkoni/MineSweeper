@@ -19,8 +19,6 @@ class Board:
         # Generating mines randomly
         self.placeMines(0, numMines, gridSize)
 
-        self.displayDebug()
-
         # Assigning mine count values to each grid square
         circleArr = [[0,1],[-1,1],[-1,0],[-1,-1],[0,-1],[1,-1],[1,0],[1,1]]
         for row in range(0,gridSize):
