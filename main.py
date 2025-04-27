@@ -5,7 +5,7 @@ gridsize = 10
 # Number of mines in game
 mines = 25
 
-board = Board(gridSize, mines)
+board = Board(gridsize, mines)
 
 while True:
     board.displayBoard()
