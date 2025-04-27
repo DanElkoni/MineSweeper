@@ -1,8 +1,11 @@
 from board import Board
 
+# Square board side length
 gridsize = 10
+# Number of mines in game
+mines = 25
 
-board = Board(10,25)
+board = Board(gridSize, mines)
 
 while True:
     board.displayBoard()
