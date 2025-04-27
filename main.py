@@ -1,11 +1,9 @@
-from board import Board
+from Board import Board
 
-# Square board side length
-gridsize = 10
-# Number of mines in game
-mines = 25
+gridsize = int(input("Enter a sidelength for the square minesweeper grid: "))
+mines = int(input(f"How many mines would you like on the board? (Reccomended {(gridsize**2)/4})"))
 
-board = Board(gridsize, mines)
+board = Board(gridsize,mines)
 
 while True:
     board.displayBoard()
